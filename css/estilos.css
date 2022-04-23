@@ -1,10 +1,75 @@
-body{ background-color:white;
+body {
+    background-color: white;
 }
 
-.f-violet{    background-color:#b677be;
+.f-violet {
+    background-color: #b677be;
 }
+
 .tarjetas {
     width: 70px;
     height: 70px;
     margin: 10px;
+}
+.galeria {
+    width: 400px;
+    height: 350px;
+}
+.contenedorBikinis {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+        "bikini1 bikini2 bikini3"
+        "bikini4 bikini5 bikini6"
+        "bikini7 bikini8 bikini9"
+}
+.bikini1 {
+    grid-area: bikini1;
+}
+
+.bikini2 {
+    grid-area: bikini2;
+}
+
+.bikini3 {
+    grid-area: bikini3;
+}
+
+.bikini4 {
+    grid-area: bikini4;
+}
+
+.bikini5 {
+    grid-area: bikini5;
+}
+
+.bikini6 {
+    grid-area: bikini6;
+}
+
+.bikini7 {
+    grid-area: bikini7;
+}
+
+.bikini8 {
+    grid-area: bikini8;
+}
+
+.bikini9 {
+    grid-area: bikini9;
+}
+.bikini1,
+.bikini2,
+.bikini3,
+.bikini4,
+.bikini5,
+.bikini6,
+.bikini7,
+.bikini8,
+.bikini9 {
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
 }
