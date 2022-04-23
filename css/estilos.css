@@ -19,11 +19,16 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
     grid-template-areas: 
+        "tituloBikinis tituloBikinis tituloBikinis"
         "bikini1 bikini2 bikini3"
         "bikini4 bikini5 bikini6"
         "bikini7 bikini8 bikini9"
+}
+.tituloBikini{
+    grid-area: tituloBikinis;
+    
 }
 .bikini1 {
     grid-area: bikini1;
@@ -72,4 +77,34 @@ body {
     padding: 20px;
     margin: 5px;
     text-align: center;
+}
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .contenedorBikinis {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas:
+        "tituloBikinis tituloBikinis"
+            "bikini1 bikini2"
+            "bikini3 bikini4"
+            "bikini5 bikini6"
+            "bikini7 bikini8"
+            "bikini9 bikini9"
+    }
+}
+@media screen and (max-width:767px) {
+    .contenedorBikinis {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, auto);
+        grid-template-areas:
+            "tituloBikinis"
+            "bikini1"
+            "bikini2"
+            "bikini3"
+            "bikini4"
+            "bikini5"
+            "bikini6"
+            "bikini7"
+            "bikini8"
+            "bikini9"
+    }
 }
